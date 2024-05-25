@@ -50,25 +50,27 @@
             padding: 1em; 
             width: calc(100% - 220px); 
         }
-        .footer { 
-            background-color: #336666; 
-            color: white; 
-            text-align: center; 
-            padding: 1em; 
-            position: fixed; 
-            width: 100%; 
-            bottom: 0; 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
         }
-        .logo { 
-            text-align: center; 
-            margin-top: 50px; 
+        table, th, td {
+            border: 1px solid #ddd;
         }
-        .logo img { 
-            max-width: 100%; 
-            height: auto; 
+        th, td {
+            padding: 12px;
+            text-align: left;
         }
-        h2.section-title {
-            margin-top: 40px;
+        th {
+            background-color: #f4f4f4;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -148,117 +150,8 @@
                 <td><a href="#">Link</a></td>
             </tr>
         </table>
+    </div>
+</div>
 
-        <h2 id="arrays" class="section-title">Arrays - An Organized Study Guide For Arrays</h2>
-        <p>Arrays are a fundamental data structure in Java that allow you to store multiple values of the same type in a single variable. Each element in an array is identified by an index, which starts at zero. Arrays provide a way to organize data so that related values can be stored together and accessed efficiently. They are declared with a fixed size, meaning the number of elements an array can hold is determined when the array is created and cannot be changed later. This can be a limitation if the number of elements is not known in advance. Arrays are used extensively in programming for tasks like storing lists of items, managing data in loops, and implementing algorithms.</p>
-        <table>
-            <tr>
-                <th>Top Array Guides</th>
-                <th>Lesson</th>
-                <th>Authors</th>
-                <th>Summary</th>
-                <th>Source</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Varalu N.</td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Vardaan S.</td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Edwin A.</td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-        </table>
-
-        <h2 id="data-types" class="section-title">Data Types and Control Structures</h2>
-        <p>In Java, data types define the kind of data that a variable can hold. Primitive data types include int (integer), double (floating-point number), char (character), boolean (true or false), byte, short, long, and float. Each primitive type has a specific size and range. Reference data types include classes, arrays, and interfaces, which are more complex structures that can hold multiple values or objects. Proper use of data types ensures efficient memory usage and helps prevent errors in programs.</p>
-        <p>Control structures are constructs that dictate the flow of control in a program. They include:</p>
-        <ul>
-            <li><strong>Conditionals:</strong> if, else if, and else statements allow the program to execute certain sections of code based on whether a condition is true or false.</li>
-            <li><strong>Switch statement:</strong> allows a variable to be tested for equality against a list of values, and executes corresponding blocks of code.</li>
-            <li><strong>Loops:</strong> for, while, and do-while loops enable repetitive execution of a block of code as long as a specified condition is met. for loops are typically used when the number of iterations is known, while loops when the number of iterations is not known, and do-while loops when the code block should execute at least once.</li>
-        </ul>
-        <table>
-            <tr>
-                <th>Top Structures Guides</th>
-                <th>Lesson</th>
-                <th>Authors</th>
-                <th>Summary</th>
-                <th>Source</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><a href="#">Link</a></td>
-            </tr>
-        </table>
+</body>
+</html>
