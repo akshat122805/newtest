@@ -3,51 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Go-To Mortensen's AP CSA Exam Guide</title>
+    <title>Mortensen's AP Exam Guide</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
         }
-        h1, h2, h3 {
-            color: #333;
-        }
-        table {
+        header { 
+            background-color: #000; 
+            color: white; 
+            padding: 1em; 
+            text-align: center; 
             width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
         }
-        table, th, td {
-            border: 1px solid #ddd;
+        header h1 { 
+            margin: 0; 
+            font-size: 1.5em; 
         }
-        th, td {
-            padding: 12px;
-            text-align: left;
+        .main-content { 
+            display: flex; 
+            flex-grow: 1; 
         }
-        th {
-            background-color: #f4f4f4;
+        nav { 
+            background-color: #336666; 
+            color: white; 
+            width: 200px; 
+            padding: 1em; 
+            height: 100vh; 
+            overflow-y: auto; 
+            position: fixed; 
         }
-        a {
-            color: #3498db;
-            text-decoration: none;
+        nav a { 
+            display: block; 
+            color: white; 
+            padding: 10px; 
+            text-decoration: none; 
         }
-        a:hover {
-            text-decoration: underline;
+        nav a:hover { 
+            background-color: #ffcc66; 
+            color: black; 
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
+        .container { 
+            margin-left: 220px; 
+            padding: 1em; 
+            width: calc(100% - 220px); 
         }
-        .section-title {
+        .footer { 
+            background-color: #336666; 
+            color: white; 
+            text-align: center; 
+            padding: 1em; 
+            position: fixed; 
+            width: 100%; 
+            bottom: 0; 
+        }
+        .logo { 
+            text-align: center; 
+            margin-top: 50px; 
+        }
+        .logo img { 
+            max-width: 100%; 
+            height: auto; 
+        }
+        h2.section-title {
             margin-top: 40px;
         }
     </style>
 </head>
 <body>
+
+<header>
+    <h1>Mortensen's AP Exam Guide</h1>
+</header>
+
+<div class="main-content">
+    <nav>
+        <p>Main Menu</p>
+        <a href="#home">Home</a>
+        <a href="#top-ranked-lessons">Top Ranked Lessons</a>
+        <a href="#arrays">Arrays</a>
+        <a href="#data-types">Data Types and Control Structures</a>
+        <a href="#arraylists">ArrayLists</a>
+        <a href="#inheritance">Inheritance</a>
+        <a href="#2d-arrays">2D Arrays</a>
+        <a href="#frq-reflections">AP Exam FRQ Reflections</a>
+        <a href="#feedback">Leave Feedback</a>
+    </nav>
+
     <div class="container">
-        <h1>Your Go-To Mortensen's AP CSA Exam Guide</h1>
-        <h2>Overall Top Student Lessons (Ranked) 2023-2024</h2>
+        <h1 id="home">Your Go-To Mortensen's AP CSA Exam Guide</h1>
+
+        <h2 id="top-ranked-lessons">Overall Top Student Lessons (Ranked) 2023-2024</h2>
         <p>Below is a table of the top student lessons, selected based on their relevance and utility for the AP exam preparation. You can use the links next to each lesson to dive deeper into the topics.</p>
         <table>
             <tr>
@@ -97,6 +145,120 @@
                 <td>2D Array Lesson</td>
                 <td>Workshop 4 - Lesson on 2D Arrays and Traversing them</td>
                 <td>Focus on 2D arrays and effective methods for traversing them.</td>
+                <td><a href="#">Link</a></td>
+            </tr>
+        </table>
+
+        <h2 id="arrays" class="section-title">Arrays - An Organized Study Guide For Arrays</h2>
+        <p>Arrays are a fundamental data structure in Java that allow you to store multiple values of the same type in a single variable. Each element in an array is identified by an index, which starts at zero. Arrays provide a way to organize data so that related values can be stored together and accessed efficiently. They are declared with a fixed size, meaning the number of elements an array can hold is determined when the array is created and cannot be changed later. This can be a limitation if the number of elements is not known in advance. Arrays are used extensively in programming for tasks like storing lists of items, managing data in loops, and implementing algorithms.</p>
+        <table>
+            <tr>
+                <th>Top Array Guides</th>
+                <th>Lesson</th>
+                <th>Authors</th>
+                <th>Summary</th>
+                <th>Source</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Varalu N.</td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Vardaan S.</td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Edwin A.</td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+        </table>
+
+        <h2 id="data-types" class="section-title">Data Types and Control Structures</h2>
+        <p>In Java, data types define the kind of data that a variable can hold. Primitive data types include int (integer), double (floating-point number), char (character), boolean (true or false), byte, short, long, and float. Each primitive type has a specific size and range. Reference data types include classes, arrays, and interfaces, which are more complex structures that can hold multiple values or objects. Proper use of data types ensures efficient memory usage and helps prevent errors in programs.</p>
+        <p>Control structures are constructs that dictate the flow of control in a program. They include:</p>
+        <ul>
+            <li><strong>Conditionals:</strong> if, else if, and else statements allow the program to execute certain sections of code based on whether a condition is true or false.</li>
+            <li><strong>Switch statement:</strong> allows a variable to be tested for equality against a list of values, and executes corresponding blocks of code.</li>
+            <li><strong>Loops:</strong> for, while, and do-while loops enable repetitive execution of a block of code as long as a specified condition is met. for loops are typically used when the number of iterations is known, while loops when the number of iterations is not known, and do-while loops when the code block should execute at least once.</li>
+        </ul>
+        <table>
+            <tr>
+                <th>Top Structures Guides</th>
+                <th>Lesson</th>
+                <th>Authors</th>
+                <th>Summary</th>
+                <th>Source</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="#">Link</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td><a href="#">Link</a></td>
             </tr>
         </table>
