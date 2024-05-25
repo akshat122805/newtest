@@ -8,8 +8,9 @@
         body { 
             font-family: Arial, sans-serif; 
             margin: 0; 
-            padding: 0; 
             display: flex; 
+            flex-direction: column; 
+            height: 100vh;
         }
         header { 
             background-color: #000; 
@@ -34,6 +35,8 @@
             height: 100vh; 
             overflow-y: auto; 
             position: fixed; 
+            top: 0;
+            left: 0;
         }
         nav a { 
             display: block; 
@@ -49,6 +52,7 @@
             margin-left: 220px; 
             padding: 1em; 
             width: calc(100% - 220px); 
+            overflow-y: auto;
         }
         table {
             width: 100%;
